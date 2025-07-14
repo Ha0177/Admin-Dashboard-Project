@@ -1,1 +1,26 @@
 @import url(https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css);
+
+body {
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: 2.7fr 10fr;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+nav.container {
+    background-color: hsl(201.18deg 78.9% 46.47%);
+    grid-area: sidebar;
+}
+header.container {
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+    box-shadow: 0 4px 8px -2px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+main.container {
+    background-color: hsl(214.29deg 31.82% 91.37%);
+    grid-area: main;
+}
