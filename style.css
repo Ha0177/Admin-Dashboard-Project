@@ -172,7 +172,7 @@ div.main-container {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 42.6% 30%;
     padding: 30px;
-    height: 100%;
+    height: min-content;
 }
 div.main-container h1 {
     font-size: 23px;
