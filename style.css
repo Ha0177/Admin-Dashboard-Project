@@ -14,15 +14,16 @@ body {
 ul,ol {
     list-style: none;
 }
-button {
+.second-row button {
     appearance: none;
     cursor: pointer;
     background-color: hsl(201.18deg 78.9% 46.47%);
     border: none;
-    padding: 10px;
+    padding: 15px;
     color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 25px;
     width: 6em;
+    font-weight: 600;
 }
 
 nav.container {
@@ -92,10 +93,15 @@ main.container {
     flex: 1 1 0;
     min-width: 0;
 }
+.search-bar .text {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+}
 
 input[type="search"] {
     outline: none;
-    width: 100%;
+    width: 80%;
     min-width: 0;
     border-radius: 50px;
     height: auto;
